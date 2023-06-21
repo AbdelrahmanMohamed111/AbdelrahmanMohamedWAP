@@ -1,0 +1,147 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="min-width: 620px;">
+
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"]{
+            -moz-appearance: textfield;
+        }
+
+        .leftlable{
+            margin-top: 30px;
+           
+        }
+
+        .leftin{
+            margin-top: 30px;
+        }
+
+        #specialSpace{
+            margin-top: 190px;
+        }
+
+        .rightlable{
+            margin-top: 30px;
+           
+        }
+
+        .rightin{
+            margin-top: 30px;
+        }
+       
+    </style>
+
+    <nav style="margin-top: 30px; border: 1px solid rgb(73, 0, 51); border-bottom: none; background-color: rgb(229, 173, 230);">
+        <p style="display: inline;">Workshop Registration</p>
+        
+        <select style="margin-left: 20px;" name="selectmore" id="">
+            <option value="">More...</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </nav>
+
+    <form id="theForm" style="min-width: 853px; margin-bottom: 0px; display: flex; flex-direction: row; border: 2px solid lightblue; border-bottom: none; justify-content: center; padding-bottom: 10px;" action="" method="get">
+        
+        <span id="leftspan" style="margin-right: 10px; margin-left: 1%; display: inline-flex; flex-direction: column;">
+            
+                <label class="leftlable" for="fname">First Name</label>
+                <label class="leftlable" for="lname">Last Name</label>
+                <label class="leftlable" for="comins">Company/Inistitution</label>
+                <label class="leftlable" id="specialSpace" for="address">Address</label>
+                <label class="leftlable" for="city">City</label>              
+                <label class="leftlable" for="state">State</label>
+                <label class="leftlable" for="country">Country</label>            
+                <label class="leftlable" for="email">Email</label>            
+                <label class="leftlable" for="phone">Phone Number</label>
+            
+            
+        </span>
+
+        <span id="leftfields" style="margin-right: 50px; display: inline-flex; flex-direction: column;">
+            <input class="leftin" type="text" name="fname" id="fname" required>
+            <input class="leftin" type="text" name="lname" id="lname" required>
+            <input class="leftin" type="text" name="comins" id="comins" required>
+            <textarea class="leftin" id="address" style="max-width: 273; max-height: 152px; min-width: 273; min-height: 152px;" name="address" id="" cols="30" rows="10"></textarea>
+            <input class="leftin" type="text" name="city" id="city" required>
+            <select class="leftin" name="state" id="state" required>
+                <option value="Iowa">Iowa</option>
+                <option value="Texas">Texas</option>
+            </select>
+            <select class="leftin" name="country" id="country" required>
+                <option value="USA">USA</option>
+                <option value="KSA">KSA</option>
+            </select>
+            <input class="leftin" type="email" name="email" id="email" required>
+            <input class="leftin" type="number" name="phone" id="phone" required>
+        </span>
+
+
+        <span id="rightspan" style="min-width: 106px; margin-right: 10px; margin-left: 1%; display: inline-flex; flex-direction: column;">
+            <a href="" target="_blank" style="margin-top: 15px;">Lunch</a>
+           
+            <!---->
+            
+                <label class="rightlable" for="meal">Meal Preference</label>
+                
+                <a  href="" style="margin-top: 15px;">Payment Details</a>
+                
+                <label class="rightlable" for="mode" >Payment Mode</label>
+
+                
+            <!---->
+            
+                <label style="margin-top: 120px;" class="rightlable" for="phone">DD/Cheque Number</label>
+                
+            <!---->
+            
+                <label class="rightlable" for="phone">Drawn On (Bank Name)</label>
+               
+            <!---->
+            
+                <label class="rightlable" for="phone">Payable at</label>
+                
+            
+            <!---->
+
+
+        </span>
+
+        <span id="rightfields" style="min-width: 170ps; margin-right: 50px; display: inline-flex; flex-direction: column;">
+            <select style="margin-top: 55px; margin-bottom: 50px;" class="" name="meal" id="meal">
+                <option value="Meat">Meat</option>
+                <option value="Vigiterian">Vigiterian</option>
+                <option value="Keto">Keto</option>
+                <option value="Dite">Dite</option>
+            </select>
+            
+            <label class="rightlable" for="Cash" ><input class="" type="checkbox" name="Cash" value="Cash" id="Cash">Cash</label>
+            <label class="rightlable" for="Cheque" ><input class="" type="checkbox" name="Cheque" value="Cheque" id="Cheque">Cheque</label>
+            <label class="rightlable" for="Demand_Draft" ><input class="" type="checkbox" name="Demand_Draft" value="Demand Draft" id="Demand_Draft">Payment Mode</label>
+                
+            
+        
+            <input class="rightin" type="number" name="phone" required="">
+
+            <input class="rightin" type="number" name="phone" required="">
+        
+            <input class="rightin" type="number" name="phone" required="">
+
+        </span>
+        
+    </form>
+    
+    <div style="background-color: gray; border: 2px solid lightblue; border-top: none; margin-top: 0px; background-size: 50%;">
+        <button form="theForm" type="submit">submit</button>
+        <button form="theForm" type="reset">reset</button>
+    </div>
+</body></html>
